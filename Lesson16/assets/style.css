@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    font-family: 'Varela Round', sans-serif;
+    background-color: rgb(27, 25, 25);
+}
+.container{
+    width: 1500px;
+    margin: 50px 0;
+
+}
+.title{
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    margin: 70px;
+}
+.subtitle{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+nav{
+    background-color: rgb(211, 40, 9);
+}
+nav ul{
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    background-color: rgb(211, 40, 9);
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+nav a:hover{
+    background-color: rgb(27, 25, 25);
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+nav ul li:hover > ul{
+    display: inherit;
+}
+nav ul ul li{
+    width: 200px;
+    float: none;
+    display: list-item;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -50px;
+    left: 200px;
+}
+
+li>a::after{
+    content: "+";
+}
+li>a:only-child::after{
+    content: "";
+}

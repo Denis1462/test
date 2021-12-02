@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.left-div h2{
+    font-size: 40px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.left-div p{
+    font-size: 20px;
+    margin: 15px;
+    margin-left: 40px;
+}
+.right-div p{
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.right-div span{
+    margin: 15px;
+}
+img{
+    width: 60px;
+    border-radius: 100%;
+    border: 1px solid white;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.left-div a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.btn{
+    max-width: 1000px;
+    border: 3px solid rgb(206, 206, 206);
+    text-align:center;
+    padding: 10px;
+    margin-left: 25px;
+    margin-top: 60px;
+}
+.blue-box{
+    background-color: rgb(28, 28, 204);
+    grid-row: span 2;
+    color: white;
+}
+
+.green-box{
+    background-color: rgb(1, 165, 1);
+    color: white;
+}
+.yelow-box{
+    background-color: rgb(235, 235, 15);
+    color: white;
+}
+.red-box{
+    background-color: rgb(216, 4, 4);
+    grid-column: span 2;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    margin: 15px;
+    padding-top: 57%;
+}
+.right-div{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.btn:hover{
+    margin-top: 70px;
+}

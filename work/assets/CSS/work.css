@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EDE6E3;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+h1,p {
+    text-align: center;
+} 
+
+.lesson-bottom > a:hover{
+    font-size: 20px;
+    color: black;
+}
+.Lesson{
+    display: inline-block;
+    height: 22vh;
+    width: 33vh;
+    padding: 20px;
+    margin: 30px 10px 10px 50px;
+    background-color: #FFF8E0;
+    border-radius: 20px;
+}
+.Sprint{
+    height: 70vh;
+    width: 160vh;
+    margin: 40px auto;
+    border-radius: 5%;
+    background-color: #C1BFDE;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 33px 31px 50px 27px rgba(0,0,0,0.09); 
+box-shadow: 0px 10px 13px -7px #000000, 33px 31px 50px 27px rgba(0,0,0,0.09);
+}
+.Sprint2{
+    width: 160vh;
+    height: 95vh;
+}
+h2{
+    padding: 40px;
+
+}
+.Lesson:hover{
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 33px 31px 50px 27px rgba(0,0,0,0.09); 
+    box-shadow: 0px 10px 13px -7px #000000, 33px 31px 50px 27px rgba(0,0,0,0.09);
+}
+.lesson-bottom{
+    margin-top: 120px;
+    border-radius: 20%;
+    width: 260px;
+    height: 40px;
+}
+.lesson-bottom > a{
+    border: 3px solid rgb(54, 54, 255);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(18, 18, 122);
+    font-size: 18px;
+}
+.Card-text{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+
+}
+
+.fab{
+    font-size: 50px;
+    border: 17px solid black;
+    border-radius: 100%;
+    margin: -5px;
+    top: 828px;
+    left: 1775px;
+    position: fixed;
+    color: black;
+    padding: 10px;
+}
+
+.fab:hover{
+    color: rgb(31, 150, 197);
+    border: 17px solid rgb(31, 150, 197);
+}
+
+.disable-a{
+    pointer-events: none;
+}
+.disable{
+    opacity: 0.7;
+    background-color:rgb(180, 180, 180) ;
+}
+.dark-mode{
+    width: 10vh;
+    height: 10vh;
+}
+.fas{
+    font-size: 50px;
+    position: relative;
+    top: -1730px;
+    left: 20px;
+}
+@media screen and (max-width: 576px){
+    .telegram-icon{
+        top: 80vh;
+        right: 5px;
+    }
+}

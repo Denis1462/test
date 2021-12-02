@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+h1{
+    width: 500px;
+    height: 50px;
+    background-color: orangered;
+    margin: 30px auto;
+}
+ h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title, .title-two{
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    background-color: gray;
+    position: relative;
+    right: -650px;
+    margin: 0 10px;
+}
+.title ul ul, .title-two ul ul{
+    display: none;
+}
+.title ul ul li, .title-two ul li{
+    width: 300px;
+    float: none;
+    top: 50px;
+}
+.title-two ul ul ul li{
+    width: 200px;
+}
+.title ul li:hover > ul{
+    display: inherit;
+    background-color: rgb(156, 156, 156);
+    position: absolute;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+li{
+    list-style-type: none;
+}
+.title-two{
+    margin-left: 10px;
+}
+.title ul:hover, .title-two ul:hover{
+    background-color: orangered;
+}
+.title-two ul li:hover > ul{
+    display: inherit;
+    background-color: rgb(156, 156, 156);  
+    position: absolute;
+}
+.title-two ul ul li:hover > ul{
+    position: absolute;
+    left: 305px;
+    top: 0px;
+    list-style-type: none;
+}
+.title ul ul{
+    list-style-type: none;
+}
+.title-two ul ul{
+    list-style-type: none;
+}
+.title-two ul li li:hover{
+    background-color: orangered;
+}

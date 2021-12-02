@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.activ{
+    background-color: rgb(163, 131, 131);
+}
+.background{
+}
+.background>img{
+    width: 200vh;
+    height: 90vh;
+}

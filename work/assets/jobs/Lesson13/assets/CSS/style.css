@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(125, 148, 168);
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+    width: 710px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: white;
+    -webkit-box-shadow: 1px 2px 13px -2px #000000; 
+box-shadow: 1px 2px 13px -2px #000000;
+padding: 20px 10px;
+font-size: 16px;
+font-weight: 400px;
+line-height: 2;
+}
+.container > p > a{
+    text-decoration: none;
+    color: green;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.arrow{
+    position: relative;
+    margin-right: 20px;
+
+}
+.arrow:after{
+    content: ">";
+    position:absolute;
+    margin: 0 5px;
+}
+.arrow:hover::after,
+.arrow:focus::after,
+.arrow:active::after{
+    -moz-transform: translate(5px, 0px);
+-webkit-transform: translate(5px, 0px);
+-o-transform: translate(5px, 0px);
+-ms-transform: translate(5px, 0px);
+transform: translate(5px, 0px);
+transition: 0.8s;
+}
+.hexagon{
+    position: relative;
+    margin-right: 50px;
+}
+
+.hexagon::before{
+    background: url("/Lesson13/assets/img/arrow.svg") center center no-repeat;
+    content: "";
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 385px;
+    margin: auto;
+    padding: 0;
+
+}
+
+.hexagon:active::after{
+    background: url("/Lesson13/assets/img/hexagon.svg") center center no-repeat;
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+}
+.hexagon:hover::after
+.hexagon:focus::after
+.hexagon:active::after{
+    -moz-transform: rotate(3853deg);
+-webkit-transform: rotate(3853deg);
+-o-transform: rotate(3853deg);
+-ms-transform: rotate(3853deg);
+transform: rotate(3853deg);
+}
+.print::after{
+    content: "("attr(href)")";
+    text-decoration: underline;
+    margin-left: 5px;
+    color: #000;
+}
